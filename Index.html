@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercatus Reviews - Las Mejores Tendencias y Reseñas</title>
+    <style>
+        /* --- ESTILOS GENERALES Y RESPETO A MÓVILES --- */
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f7f9fa; color: #333; padding-bottom: 50px; }
+        header { background: #1a1a1a; color: white; padding: 20px; text-align: center; }
+        header h1 { font-size: 1.8rem; letter-spacing: 1px; }
+        header p { color: #aaa; font-size: 0.9rem; margin-top: 5px; }
+        .container { max-width: 1000px; margin: 30px auto; padding: 0 15px; }
+
+        /* --- TABLA COMPARATIVA (Lo primero que ve el usuario) --- */
+        .comparison-box { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); margin-bottom: 40px; }
+        .comparison-box h2 { font-size: 1.3rem; margin-bottom: 15px; border-left: 4px solid #ff4757; padding-left: 10px; }
+        .table-wrapper { overflow-x: auto; } /* Evita errores de desborde en teléfonos */
+        table { width: 100%; border-collapse: collapse; text-align: left; min-width: 500px; }
+        th, td { padding: 12px; border-bottom: 1px solid #eee; font-size: 0.95rem; }
+        th { background-color: #f1f2f6; color: #444; }
+        .badge { background: #2ed573; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: bold; }
+
+        /* --- TARJETAS DE RESEÑA DETALLADA --- */
+        .review-card { background: white; border-radius: 8px; box-shadow: 0 3px 10px rgba(0,0,0,0.05); margin-bottom: 30px; display: flex; overflow: hidden; border: 1px solid #e8e8e8; }
+        .product-img-box { width: 30%; background: #eaeaea; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; color: #777; font-weight: bold; min-height: 200px; }
+        .product-info { width: 70%; padding: 20px; display: flex; flex-direction: column; justify-content: space-between; }
+        .product-title { font-size: 1.4rem; color: #1a1a1a; margin-bottom: 8px; }
+        .rating { color: #ffa502; font-size: 1.1rem; margin-bottom: 10px; }
+        .verdict { font-size: 0.95rem; color: #555; line-height: 1.5; margin-bottom: 15px; }
+        
+        /* --- BOTÓN LLAMATIVO DE AFILIADO (Call To Action) --- */
+        .affiliate-btn { display: inline-block; background: #ff4757; color: white; text-decoration: none; padding: 12px 20px; border-radius: 5px; font-weight: bold; font-size: 0.95rem; text-align: center; transition: background 0.2s; border: none; cursor: pointer; }
+        .affiliate-btn:hover { background: #e03747; }
+
+        /* --- ADAPTACIÓN PARA PANTALLAS CHICAS --- */
+        @media (max-width: 768px) {
+            .review-card { flex-direction: column; }
+            .product-img-box { width: 100%; min-height: 150px; }
+            .product-info { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>MERCATUS REVIEWS</h1>
+        <p>Análisis honestos y las mejores ofertas recomendadas para ti</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- SECCIÓN 1: TABLA COMPARATIVA RÁPIDA -->
+        <div class="comparison-box">
+            <h2>🔥 Selección Destacada de la Semana</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Precio Aprox.</th>
+                            <th>Puntuación</th>
+                            <th>Destacado por</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Chaqueta Denim Casual</strong></td>
+                            <td>$24.99</td>
+                            <td>⭐⭐⭐⭐⭐ 4.9/5</td>
+                            <td><span class="badge">MEJOR CALIDAD</span></td>
+                            <td><a href="TU_LINK_DE_AFILIADO_AQUÍ" target="_blank" style="color: #ff4757; font-weight: bold; text-decoration: none;">Ver Oferta →</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hoodie Oversize Negro</strong></td>
+                            <td>$18.50</td>
+                            <td>⭐⭐⭐⭐☆ 4.5/5</td>
+                            <td><span class="badge" style="background:#007bff;">MÁS VENDIDO</span></td>
+                            <td><a href="TU_LINK_DE_AFILIADO_AQUÍ" target="_blank" style="color: #ff4757; font-weight: bold; text-decoration: none;">Ver Oferta →</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- SECCIÓN 2: RESEÑAS DETALLADAS -->
+        <h2 style="margin-bottom: 20px; font-size: 1.4rem; color: #222;">📝 Análisis a Fondo</h2>
+
+        <!-- Tarjeta de Producto 1 -->
+        <div class="review-card">
+            <div class="product-img-box">
+                <!-- Aquí irá la foto de la prenda usando la URL de Shein o tuya -->
+                [ FOTO DEL PRODUCTO ]
+            </div>
+            <div class="product-info">
+                <div>
+                    <h3 class="product-title">Chaqueta Denim Casual con Forro</h3>
+                    <div class="rating">⭐⭐⭐⭐⭐ <span style="color: #666; font-size: 0.85rem;">(4.9 de 5 estrellas)</span></div>
+                    <p class="verdict">
+                        Esta chaqueta destaca por la resistencia de su mezclilla y la calidad de sus costuras. Es ideal para climas frescos y combina de manera excelente con estilos urbanos. Las tallas corresponden de forma exacta a la tabla de medidas estándar.
+                    </p>
+                </div>
+                <div>
+                    <p style="margin-bottom: 10px; font-size: 1.1rem;"><strong>Precio estimado:</strong> <span style="color: #2ed573; font-weight: bold;">$24.99</span></p>
+                    <!-- Al hacer clic, el navegador guarda tu cookie de referido y abre la tienda -->
+                    <a href="TU_LINK_DE_AFILIADO_AQUÍ" target="_blank" class="affiliate-btn">Ver precio y disponibilidad en la tienda →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta de Producto 2 -->
+        <div class="review-card">
+            <div class="product-img-box">
+                [ FOTO DEL PRODUCTO ]
+            </div>
+            <div class="product-info">
+                <div>
+                    <h3 class="product-title">Hoodie Oversize Negro Minimalista</h3>
+                    <div class="rating">⭐⭐⭐⭐☆ <span style="color: #666; font-size: 0.85rem;">(4.5 de 5 estrellas)</span></div>
+                    <p class="verdict">
+                        Un básico indispensable fabricado con una mezcla de algodón suave que no genera pelusas tras las primeras lavadas. El corte es holgado tal como se promociona, perfecto para un uso diario cómodo.
+                    </p>
+                </div>
+                <div>
+                    <p style="margin-bottom: 10px; font-size: 1.1rem;"><strong>Precio estimado:</strong> <span style="color: #2ed573; font-weight: bold;">$18.50</span></p>
+                    <a href="TU_LINK_DE_AFILIADO_AQUÍ" target="_blank" class="affiliate-btn">Ver precio y disponibilidad en la tienda →</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
